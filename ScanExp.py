@@ -305,8 +305,8 @@ if 22 in openports:
 if 25 in openports:
 	smtp_brute_force()
 
-if 20 or 21 or 22 or 25 in openports:
-	print("No exploitable open port.")
+if 20 and 21 and 22 and 25 not in openports:
+	print(f"No exploitable open port found on {ip}")
 
 print("\n")
 print(Ascii)
