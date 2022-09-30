@@ -36,17 +36,12 @@ for port in range(65535):	 #check for all available ports
 		serv.bind((ip,port)) # bind socket with address
 
 	except:
-
+		print(f"[OPEN] Open Port: {port}")
 		openports.append(port)
 
 	serv.close() #close connection
 
-i = 0
-while i < len(openports):
-	print(f"[OPEN] Open port: {openports[i]}") # Printing all open ports
-	i += 1
-
-print(f"Looking to exploit all {ip}'s open ports'")
+print(f"Looking to exploit {ip} open ports'")
 
 with open("usernames.txt", "r") as usernamesopen:
 	usernamesread = usernamesopen.read()            # Default usernames wordlist
