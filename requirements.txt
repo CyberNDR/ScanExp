@@ -1,5 +1,5 @@
-pip install socket
-pip install smtplib
-pip install paramiko
-pip install time
-pip install pyfiglet
+socket
+smtplib
+paramiko
+time
+pyfiglet
